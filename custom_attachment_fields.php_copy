@@ -1,0 +1,35 @@
+<?php
+$additional_fields = array(
+	'image_web_link' => array(
+		'label' => 'Image Web Link',
+		'input' => 'text',
+		'helps' => 'If you want this image to link to a web site',
+		'application' => 'image',
+		'exclusions' => array( 'audio', 'video' ),
+		'required' => false
+	),
+	'image_width' => array(
+		'label' => 'Image Width',
+		'input' => 'select',
+		'options' => array(
+			'half' => 'Half',
+			'full' => 'Full'
+		),
+		'application' => 'image',
+		'exclusions' => array( 'audio', 'video' ),
+		'required' => true
+	),
+	'image_position' => array(
+		'label' => 'Image Position',
+		'input' => 'select',
+		'options' => array(
+			'left' => 'Left',
+			'right' => 'Right',
+			'center' => 'Center'
+		),
+		'application' => 'image',
+		'exclusions' => array( 'audio', 'video' ),
+		'helps' => 'This only applies if image width is not full.',
+		'required' => false
+	),
+);
